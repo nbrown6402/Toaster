@@ -1,11 +1,11 @@
-#include <stdio.h>                             /* std i/o library           */
-#include <time.h>                              /* library for delay()*/
-#include <windows.h>                               /* needed for Sleep() function */
-#include <conio.h>                                 /* needed for kbhit()/getch()  */       
+#include <stdio.h>                        		 /* std i/o library */
+#include <time.h>                             		 /* library for delay() */
+#include <windows.h>                             	 /* needed for Sleep() function */
+#include <conio.h>                            		 /* needed for kbhit()/getch() */       
 /* ***************** THE ABOVE INCLUDES MUST REMAIN *********************** */
 /* ************************************************************************ */
 
-    #include "mrbread.c"                            /* add your includes here*/
+    #include "mrbread.c"                            	/* add your includes here*/
      #include "ban.c"
 
 
@@ -13,15 +13,15 @@
 /* ************************************************************************ */
 /* ************************************************************************ */
 /*                                                                          */
-/* program: toastman.c														*/
-/* programmer: Nicole Brown													*/
-/* due date: 12/10/21														*/
-/*																			*/
-/* purpose:To toast bread or bagels duh...  								*/
-/*																			*/
-/* inputs: A button "push"													*/
-/* outputs:text, ascii art, toasted bread or bagel							*/
-/*																		    */
+/* program: toastman.c							    */
+/* programmer: Nicole Brown						    */
+/* due date: 12/10/21							    */
+/*							           	    */
+/* purpose:To toast bread or bagels duh...  				    */
+/*									    */
+/* inputs: A button "push"						    */
+/* outputs:text, ascii art, toasted bread or bagel			    */
+/*									    */
 /* notes: none                                                              */
 /*                                                                          */
 /* ************************************************************************ */
@@ -48,31 +48,33 @@
 
 
 int main(){
-												//creates a character array that will eventually display
-												//Mr. Toastyman
+	//creates a character array that will eventually display
+	//Mr. Toastyman
+	
 	char toasty[50][100] = {"\n  _   __ \n ( `^` )) \n |.  . || \n |  -  || \n '-----'` \n", };
-	char user_input = 0;						//initializes the users input as 0 until the user enters a value
+	char user_input = 0;								//initializes the users input as 0 until the user enters a value
 	cancel();									//wakes the toaster up
 	int k=4;									//initializes the original darkness level to 4
-												//creates a character array that will eventually display the menu
+											//creates a character array that will eventually display the menu
 	char banner_data [11][100] = {"Welcome to the legend of Mr. Toastyman",
-								  "and Mr. Bagelman",
-								  "  ",
-								"Please Enter what you would like to do: ",
-								"T for Toast ",
-								"C for Cancel",
-								"B for Bagel ",
-								"R to Reheat ",
-								"D to Defrost",
-								"1-7 for Darkness Level",
-								"S for the story of Mr. Toastyman and Mr. Bagelman " };
+				        "and Mr. Bagelman",
+				        "  ",
+				        "Please Enter what you would like to do: ",
+					"T for Toast ",
+					"C for Cancel",
+					"B for Bagel ",
+					"R to Reheat ",
+					"D to Defrost",
+					"1-7 for Darkness Level",
+					"S for the story of Mr. Toastyman and Mr. Bagelman " };
 							
 while(user_input !='x'){ 						//runs the code below until 'x' is entered
-banner_filled(42, 56, 2 , 8, 11, banner_data);	//displays the menu
-printf("The current darkness level is %d/7",k);	//displays the current darkness setting
-printf("\nPlease enter an option: "); 			//prompts the user to enter an option
+banner_filled(42, 56, 2 , 8, 11, banner_data);				//displays the menu
+printf("The current darkness level is %d/7",k);				//displays the current darkness setting
+printf("\nPlease enter an option: "); 					//prompts the user to enter an option
 scanf("%s",&user_input); 						//scans the users input 
 
+	
 //when T is entered the toaster will toast, the text and ascii art will appear on screen, the progress bar will run, and the number
 //of total pieces or toast/bagels toasted will increase by one.
 if (user_input=='T') {toast(); printf("This is Mr. Toastyman say hello!\n");banner_string(0, 100, 0, toasty[0]); progresst(k);how(); }
