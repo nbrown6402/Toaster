@@ -1,0 +1,12 @@
+-While x is not inputted
+-Display menu 
+-Take in users input 
+-If 'T' is pressed toast, display text and ascii art, display progress bar, add one to total toasted
+-If 'B' is pressed toggle bagel, toast, display text and ascii art, display progress bar, add one to the total toasted
+-If 'C' is pressed cancel
+-If 'R' is pressed Reheat, display text and ascii art, display progress bar
+-If 'D' is pressed Defrost, display text and ascii art, display progress bar
+-If '+' is pressed add 1 to darkness level, if darkness level is greater than 7 then change the darkness level to 1, change progress bar times
+-If '-' is pressed subtract 1 from darkness level, if darkness level is less than 1 then change the darkness level to 7, change progress bar times
+-If a number from 1-7 is pressed change the darkness level to that darkness level, change progress bar times
+-If 'S' is pressed display the story of toast/bagel man   

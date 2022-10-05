@@ -1,0 +1,5 @@
+This program is a program coded in C++ which was then run with a Cuisinaart CPT-420C Toaster.
+The user would run the code and control the toaster from MingW or any C++ compiler. The user 
+is then prompted with the normal toaster functions of toast, bagel, change darkness, defrost 
+and reheat. The user is then surprised with wonderful ascii art while they wait for their
+food item to be heated. 
