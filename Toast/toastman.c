@@ -48,36 +48,35 @@
 
 
 int main(){
-	//creates a character array that will eventually display
-	//Mr. Toastyman
-	
-	char toasty[50][100] = {"\n  _   __ \n ( `^` )) \n |.  . || \n |  -  || \n '-----'` \n", };
-	char user_input = 0;								//initializes the users input as 0 until the user enters a value
+												//creates a character array that will eventually display
+												//Mr. Toastyman
+	//char toasty[50][100] = {"\n  _   __ \n ( `^` )) \n |.  . || \n |  -  || \n '-----'` \n", };
+	char user_input = 0;						//initializes the users input as 0 until the user enters a value
 	cancel();									//wakes the toaster up
 	int k=4;									//initializes the original darkness level to 4
-											//creates a character array that will eventually display the menu
-	char banner_data [11][100] = {"Welcome to the legend of Mr. Toastyman",
-				        "and Mr. Bagelman",
-				        "  ",
-				        "Please Enter what you would like to do: ",
-					"T for Toast ",
-					"C for Cancel",
-					"B for Bagel ",
-					"R to Reheat ",
-					"D to Defrost",
-					"1-7 for Darkness Level",
-					"S for the story of Mr. Toastyman and Mr. Bagelman " };
+												//creates a character array that will eventually display the menu
+	char banner_data [12][100] = {"Welcome to the legend of Mr. Toastyman",
+								  "and Mr. Bagelman",
+								  "  ",
+								"Please Enter what you would like to do: ",
+								"T for Toast ",
+								"C for Cancel",
+								"B for Bagel ",
+								"R to Reheat ",
+								"D to Defrost",
+								"1-7 for Darkness Level",
+								"x to exit toaster",
+								"S for the story of Mr. Toastyman and Mr. Bagelman " };
 							
 while(user_input !='x'){ 						//runs the code below until 'x' is entered
-banner_filled(42, 56, 2 , 8, 11, banner_data);				//displays the menu
-printf("The current darkness level is %d/7",k);				//displays the current darkness setting
-printf("\nPlease enter an option: "); 					//prompts the user to enter an option
+banner_filled(42, 56, 2 , 8, 12, banner_data);	//displays the menu
+printf("The current darkness level is %d/7",k);	//displays the current darkness setting
+printf("\nPlease enter an option: "); 			//prompts the user to enter an option
 scanf("%s",&user_input); 						//scans the users input 
 
-	
 //when T is entered the toaster will toast, the text and ascii art will appear on screen, the progress bar will run, and the number
 //of total pieces or toast/bagels toasted will increase by one.
-if (user_input=='T') {toast(); printf("This is Mr. Toastyman say hello!\n");banner_string(0, 100, 0, toasty[0]); progresst(k);how(); }
+if (user_input=='T') {toast(); printf("This is Mr. Toastyman say hello!\n");man(); progresst(k);how(); }
 
 //when C is entered the action the toaster is preforming will be stopped and the tray will raise
 if (user_input=='C') {cancel(); k=0;}
@@ -118,6 +117,10 @@ printf("\n");
 }
 return 0; 
 }
+
+
+
+
 
 
 
