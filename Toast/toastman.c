@@ -48,9 +48,7 @@
 
 
 int main(){
-												//creates a character array that will eventually display
-												//Mr. Toastyman
-	//char toasty[50][100] = {"\n  _   __ \n ( `^` )) \n |.  . || \n |  -  || \n '-----'` \n", };
+												
 	char user_input = 0;						//initializes the users input as 0 until the user enters a value
 	cancel();									//wakes the toaster up
 	int k=4;									//initializes the original darkness level to 4
