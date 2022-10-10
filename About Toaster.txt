@@ -7,3 +7,6 @@ they wait for their food item to be heated.
 To run this program please compile toastman.c. Since the toaster programs to run the actual 
 toaster were not given to me serialsim.c and serialsim.h are included in place of these, so
 the program will still run in a C compiler. 
+
+Just as a note too all options are case sensitive so if you press 't' there eill be no toast. You must enter 'T' to toast. 
+There is a menu that appears that has the correct case sensitive options to choose from. 
