@@ -1,5 +1,18 @@
 #include <stdio.h>                             /* std i/o library           */
 
+
+int man(){
+	printf(R"EOF(					//a function that allow for Mr. ToastMan to be displayed.
+		 _   __ 
+		( `^` )) 
+		|.  . || 
+		|  -  || 
+		'-----'` 
+		    
+)EOF"); t
+
+}
+
 int bread(){								//a function that allows for Mr. Bagelman to be displayed
 
 
