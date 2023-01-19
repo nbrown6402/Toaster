@@ -10,3 +10,10 @@ the program will still run in a C compiler.
 
 Just as a note too all options are case sensitive so if you press 't' there eill be no toast. You must enter 'T' to toast. 
 There is a menu that appears that has the correct case sensitive options to choose from. 
+
+
+
+
+
+
+.
